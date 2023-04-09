@@ -11,13 +11,13 @@ if(isset($_REQUEST['eid']))
 	{
 $eid=intval($_GET['eid']);
 $status="0";
-$sql = "UPDATE tbltestimonial SET status=:status WHERE  id=:eid";
+$sql = "UPDATE tblcomment SET status=:status WHERE  id=:eid";
 $query = $dbh->prepare($sql);
 $query -> bindParam(':status',$status, PDO::PARAM_STR);
 $query-> bindParam(':eid',$eid, PDO::PARAM_STR);
 $query -> execute();
 
-$msg="Testimonial Successfully Inacrive";
+$msg="Comments Successfully Inacrive";
 }
 
 
@@ -26,13 +26,13 @@ if(isset($_REQUEST['aeid']))
 $aeid=intval($_GET['aeid']);
 $status=1;
 
-$sql = "UPDATE tbltestimonial SET status=:status WHERE  id=:aeid";
+$sql = "UPDATE tblcomment SET status=:status WHERE  id=:aeid";
 $query = $dbh->prepare($sql);
 $query -> bindParam(':status',$status, PDO::PARAM_STR);
 $query-> bindParam(':aeid',$aeid, PDO::PARAM_STR);
 $query -> execute();
 
-$msg="Testimonial Successfully Active";
+$msg="Comment Successfully Active";
 }
 
 
@@ -49,23 +49,24 @@ $msg="Testimonial Successfully Active";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal |Admin Manage testimonials   </title>
+	<title>Car Rental Portal |Admin Manage comments   </title>
 
-	<!-- Font awesome -->
+	
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Sandstone Bootstrap CSS -->
+	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Bootstrap Datatables -->
+	
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
-	<!-- Bootstrap social button library -->
+	
 	<link rel="stylesheet" href="css/bootstrap-social.css">
-	<!-- Bootstrap select -->
+	
 	<link rel="stylesheet" href="css/bootstrap-select.css">
-	<!-- Bootstrap file input -->
+	
+	
 	<link rel="stylesheet" href="css/fileinput.min.css">
-	<!-- Awesome Bootstrap checkbox -->
+	
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
-	<!-- Admin Stye -->
+	
 	<link rel="stylesheet" href="css/style.css">
   <style>
 		.errorWrap {
@@ -99,11 +100,11 @@ $msg="Testimonial Successfully Active";
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Manage Testimonials</h2>
+						<h2 class="page-title">Manage comments</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">User Testimonials</div>
+							<div class="panel-heading">User comments</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -113,7 +114,7 @@ $msg="Testimonial Successfully Active";
 										<th>#</th>
 											<th>Name</th>
 											<th>Email</th>
-											<th>Testimonials</th>
+											<th>Comments</th>
 											<th>Posting date</th>
 											<th>Action</th>
 										</tr>
@@ -123,7 +124,7 @@ $msg="Testimonial Successfully Active";
 										<th>#</th>
 											<th>Name</th>
 											<th>Email</th>
-											<th>Testimonials</th>
+											<th>Comments</th>
 											<th>Posting date</th>
 											<th>Action</th>
 										</tr>
@@ -147,10 +148,10 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->PostingDate);?></td>
 										<td><?php if($result->status=="" || $result->status==0)
 {
-	?><a href="testimonials.php?aeid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to Active')"> Inactive</a>
+	?><a href="comments.php?aeid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to Active')"> Inactive</a>
 <?php } else {?>
 
-<a href="testimonials.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to Inactive')"> Active</a>
+<a href="comments.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to Inactive')"> Active</a>
 </td>
 <?php } ?></td>
 										</tr>
@@ -173,7 +174,8 @@ foreach($results as $result)
 		</div>
 	</div>
 
-	<!-- Loading Scripts -->
+
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

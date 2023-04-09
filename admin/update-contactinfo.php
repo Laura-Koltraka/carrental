@@ -7,7 +7,7 @@ if(strlen($_SESSION['alogin'])==0)
 header('location:index.php');
 }
 else{
-// Code for change password	
+
 if(isset($_POST['submit']))
 {
 $address=$_POST['address'];
@@ -34,23 +34,23 @@ $msg="Info Updateed successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Admin Create Brand</title>
+	<title>Rental.al | Admin Create Brand</title>
 
-	<!-- Font awesome -->
+	
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Sandstone Bootstrap CSS -->
+	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Bootstrap Datatables -->
+	
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
-	<!-- Bootstrap social button library -->
+	
 	<link rel="stylesheet" href="css/bootstrap-social.css">
-	<!-- Bootstrap select -->
+	
 	<link rel="stylesheet" href="css/bootstrap-select.css">
-	<!-- Bootstrap file input -->
+	
 	<link rel="stylesheet" href="css/fileinput.min.css">
-	<!-- Awesome Bootstrap checkbox -->
+	
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
-	<!-- Admin Stye -->
+	
 	<link rel="stylesheet" href="css/style.css">
   <style>
 		.errorWrap {
@@ -155,7 +155,7 @@ foreach($results as $result)
 		</div>
 	</div>
 
-	<!-- Loading Scripts -->
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

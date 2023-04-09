@@ -19,23 +19,24 @@ else{
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Admin Dashboard</title>
+	<title>Rental.al | Admin Dashboard</title>
 
-	<!-- Font awesome -->
+	
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Sandstone Bootstrap CSS -->
+	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Bootstrap Datatables -->
+	
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
-	<!-- Bootstrap social button library -->
+	
+	
 	<link rel="stylesheet" href="css/bootstrap-social.css">
-	<!-- Bootstrap select -->
+	
 	<link rel="stylesheet" href="css/bootstrap-select.css">
-	<!-- Bootstrap file input -->
+	
 	<link rel="stylesheet" href="css/fileinput.min.css">
-	<!-- Awesome Bootstrap checkbox -->
+	
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
-	<!-- Admin Stye -->
+	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -192,10 +193,10 @@ $testimonials=$query5->rowCount();
 ?>
 
 													<div class="stat-panel-number h1 "><?php echo htmlentities($testimonials);?></div>
-													<div class="stat-panel-title text-uppercase">Testimonials</div>
+													<div class="stat-panel-title text-uppercase">Comments</div>
 												</div>
 											</div>
-											<a href="testimonials.php" class="block-anchor panel-footer text-center">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
+											<a href="comments.php" class="block-anchor panel-footer text-center">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
 										</div>
 									</div>
 								
@@ -217,7 +218,7 @@ $testimonials=$query5->rowCount();
 		</div>
 	</div>
 
-	<!-- Loading Scripts -->
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -232,7 +233,7 @@ $testimonials=$query5->rowCount();
 		
 	window.onload = function(){
     
-		// Line chart from swirlData for dashReport
+		
 		var ctx = document.getElementById("dashReport").getContext("2d");
 		window.myLine = new Chart(ctx).Line(swirlData, {
 			responsive: true,
@@ -241,11 +242,11 @@ $testimonials=$query5->rowCount();
 			multiTooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
 		}); 
 		
-		// Pie Chart from doughutData
+		
 		var doctx = document.getElementById("chart-area3").getContext("2d");
 		window.myDoughnut = new Chart(doctx).Pie(doughnutData, {responsive : true});
 
-		// Dougnut Chart from doughnutData
+		
 		var doctx = document.getElementById("chart-area4").getContext("2d");
 		window.myDoughnut = new Chart(doctx).Doughnut(doughnutData, {responsive : true});
 

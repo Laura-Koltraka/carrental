@@ -37,7 +37,7 @@ $contactno=$result->ContactNo;
 <?php }
 else{ 
 
-echo "Welcome To Car rental portal";
+echo "Welcome To Our Website";
  } ?>
           </div>
         </div>
@@ -45,7 +45,7 @@ echo "Welcome To Car rental portal";
     </div>
   </div>
   
-  <!-- Navigation -->
+
   <nav id="navigation_bar" class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
@@ -74,8 +74,8 @@ foreach($results as $result)
             <li><a href="profile.php">Profile Settings</a></li>
               <li><a href="update-password.php">Update Password</a></li>
             <li><a href="my-booking.php">My Booking</a></li>
-            <li><a href="post-testimonial.php">Post a Testimonial</a></li>
-          <li><a href="my-testimonials.php">My Testimonial</a></li>
+            <li><a href="post-comments.php">Post a Comment</a></li>
+          <li><a href="my-comments.php">My Comments</a></li>
             <li><a href="logout.php">Sign Out</a></li>
             <?php } ?>
           </ul>
@@ -103,6 +103,6 @@ foreach($results as $result)
       </div>
     </div>
   </nav>
-  <!-- Navigation end --> 
+
   
 </header>

@@ -56,29 +56,22 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
 <html lang="en">
 <head>
 
-<title>Car Rental | Vehicle Details</title>
-<!--Bootstrap -->
+<title>Rental.al | Vehicle Details</title>
+
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-<!--Custome Style -->
+
 <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-<!--OWL Carousel slider-->
+
 <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
 <link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css">
-<!--slick-slider -->
+
 <link href="assets/css/slick.css" rel="stylesheet">
-<!--bootstrap-slider -->
+
 <link href="assets/css/bootstrap-slider.min.css" rel="stylesheet">
-<!--FontAwesome Font Style -->
+
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-<!-- SWITCHER -->
-		<link rel="stylesheet" id="switcher-css" type="text/css" href="assets/switcher/css/switcher.css" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/red.css" title="red" media="all" data-default-color="true" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/orange.css" title="orange" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/blue.css" title="blue" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/pink.css" title="pink" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/green.css" title="green" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/purple.css" title="purple" media="all" />
+
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicon-icon/apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicon-icon/apple-touch-icon-114-precomposed.html">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicon-icon/apple-touch-icon-72-precomposed.png">
@@ -88,15 +81,10 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
 </head>
 <body>
 
-<!-- Start Switcher -->
-<?php include('includes/colorswitcher.php');?>
-<!-- /Switcher -->  
 
-<!--Header-->
 <?php include('includes/header.php');?>
-<!-- /Header --> 
 
-<!--Listing-Image-Slider-->
+
 
 <?php 
 $vhid=intval($_GET['vhid']);
@@ -126,10 +114,7 @@ $_SESSION['brndid']=$result->bid;
   <div><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage5);?>" class="img-responsive" alt="image" width="900" height="560"></div>
   <?php } ?>
 </section>
-<!--/Listing-Image-Slider-->
 
-
-<!--Listing-detail-->
 <section class="listing-detail">
   <div class="container">
     <div class="listing_detail_head row">
@@ -165,25 +150,25 @@ $_SESSION['brndid']=$result->bid;
         </div>
         <div class="listing_more_info">
           <div class="listing_detail_wrap"> 
-            <!-- Nav tabs -->
+           
             <ul class="nav nav-tabs gray-bg" role="tablist">
               <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab">Vehicle Overview </a></li>
           
               <li role="presentation"><a href="#accessories" aria-controls="accessories" role="tab" data-toggle="tab">Accessories</a></li>
             </ul>
             
-            <!-- Tab panes -->
+         
             <div class="tab-content"> 
-              <!-- vehicle-overview -->
+          
               <div role="tabpanel" class="tab-pane active" id="vehicle-overview">
                 
                 <p><?php echo htmlentities($result->VehiclesOverview);?></p>
               </div>
               
               
-              <!-- Accessories -->
+              
               <div role="tabpanel" class="tab-pane" id="accessories"> 
-                <!--Accessories-->
+               
                 <table>
                   <thead>
                     <tr>
@@ -335,7 +320,7 @@ $_SESSION['brndid']=$result->bid;
    
       </div>
       
-      <!--Side-Bar-->
+     
       <aside class="col-md-3">
       
         <div class="share_vehicle">
@@ -369,13 +354,13 @@ $_SESSION['brndid']=$result->bid;
           </form>
         </div>
       </aside>
-      <!--/Side-Bar--> 
+     
     </div>
     
     <div class="space-20"></div>
     <div class="divider"></div>
     
-    <!--Similar-Cars-->
+  
     <div class="similar_cars">
       <h3>Similar Cars</h3>
       <div class="row">
@@ -412,30 +397,26 @@ foreach($results as $result)
 
       </div>
     </div>
-    <!--/Similar-Cars--> 
+   
     
   </div>
 </section>
-<!--/Listing-detail--> 
 
-<!--Footer -->
 <?php include('includes/footer.php');?>
-<!-- /Footer--> 
 
-<!--Back to top-->
+
 <div id="back-top" class="back-top"> <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i> </a> </div>
-<!--/Back to top--> 
+ 
 
-<!--Login-Form -->
+
 <?php include('includes/login.php');?>
-<!--/Login-Form --> 
 
-<!--Register-Form -->
+
 <?php include('includes/registration.php');?>
 
-<!--/Register-Form --> 
 
-<!--Forgot-password-Form -->
+
+
 <?php include('includes/forgotpassword.php');?>
 
 <script src="assets/js/jquery.min.js"></script>

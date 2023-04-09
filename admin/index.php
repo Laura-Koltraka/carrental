@@ -34,7 +34,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Car Rental Portal | Admin Login</title>
+	<title?Rental.al| Admin Login</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
@@ -79,7 +79,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 		</div>
 	</div>
 	
-	<!-- Loading Scripts -->
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

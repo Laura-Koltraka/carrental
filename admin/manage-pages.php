@@ -33,27 +33,28 @@ $msg="Page data updated  successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Admin Create Brand</title>
+	<title>Rental.al | Admin Create Brand</title>
 
-	<!-- Font awesome -->
+	
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Sandstone Bootstrap CSS -->
+	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Bootstrap Datatables -->
+	
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
-	<!-- Bootstrap social button library -->
+	
 	<link rel="stylesheet" href="css/bootstrap-social.css">
-	<!-- Bootstrap select -->
+	
 	<link rel="stylesheet" href="css/bootstrap-select.css">
-	<!-- Bootstrap file input -->
+	
 	<link rel="stylesheet" href="css/fileinput.min.css">
-	<!-- Awesome Bootstrap checkbox -->
+	
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
-	<!-- Admin Stye -->
+	
+	
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/JavaScript">
 <!--
-function MM_findObj(n, d) { //v4.01
+function MM_findObj(n, d) { 
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
   if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
@@ -61,7 +62,7 @@ function MM_findObj(n, d) { //v4.01
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
 
-function MM_validateForm() { //v4.0
+function MM_validateForm() { 
   var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
   for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
     if (val) { nm=val.name; if ((val=val.value)!="") {
@@ -77,7 +78,7 @@ function MM_validateForm() { //v4.0
   document.MM_returnValue = (errors == '');
 }
 
-function MM_jumpMenu(targ,selObj,restore){ //v3.0
+function MM_jumpMenu(targ,selObj,restore){ 
   eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
   if (restore) selObj.selectedIndex=0;
 }
@@ -227,7 +228,7 @@ echo htmlentities($result->detail);
 		</div>
 	</div>
 
-	<!-- Loading Scripts -->
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
