@@ -33,7 +33,7 @@ $error="Something went wrong. Please try again";
 <html lang="en">
 <head>
 
-<title>Rental.al |Post testimonial</title>
+<title>Rental.al |Comments</title>
 
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 

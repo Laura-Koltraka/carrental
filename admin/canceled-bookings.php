@@ -21,7 +21,7 @@ else{
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Canceled Bookings   </title>
+	<title>Rental.al | Canceled Bookings   </title>
 
 	
 	<link rel="stylesheet" href="css/font-awesome.min.css">

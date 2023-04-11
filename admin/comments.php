@@ -102,7 +102,7 @@ $msg="Comment Successfully Active";
 
 						<h2 class="page-title">Manage comments</h2>
 
-						<!-- Zero Configuration Table -->
+						
 						<div class="panel panel-default">
 							<div class="panel-heading">User comments</div>
 							<div class="panel-body">

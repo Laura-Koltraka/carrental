@@ -21,7 +21,7 @@ else{
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Rental.all | New Bookings   </title>
+	<title>Rental.al | New Bookings   </title>
 
 	
 	<link rel="stylesheet" href="css/font-awesome.min.css">
