@@ -3644,14 +3644,15 @@ table.info-tabel tr td {
 }
 .upload_newlogo {
   background-color: rgba(0, 0, 0, 0.8);
-  background-image: url("../images/change_logo.png");
+  background-image: url("../images/change_renlogo.png");
   background-position: center center;
   background-repeat: no-repeat;
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 200px;
+  height: 150px;
 }
 .upload_newlogo input {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
